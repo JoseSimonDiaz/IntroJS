@@ -36,7 +36,7 @@ for(const prop in auto){  //este for recorrera el obeto auto, y que cada propied
 //   console.log(typeof prop) //es para ver el tipo de datos
 // auto.prop
 // console.log(prop)
-if(typeof auto[prop] !== 'function'){
+if(typeof auto[prop] !== 'function'){ //El typeof me dice el tipo de dato
     console.log(`${prop}: ${auto[prop]}`)
 }
 }
