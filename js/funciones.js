@@ -101,6 +101,7 @@ function saludarPersona(){
   let usuarios = ['Pablo', 'Josefina', 'Anastasia']
   
   const getUsers=function(){
+    //scope local
     let usuarios = [ 'Bill GAtes', ' Steve Jobs', ' Elon Musk']
   
     console.log("Usuarios tecnologicos")
@@ -115,7 +116,7 @@ function saludarPersona(){
   
   //sintaxis
   /*  
-  const nombreDeVatiable = () => valor //si tengo una sola linea de valor, lo puedo hacer de esta manera
+  const nombreDeVatiable = () => valor //el retorm esta implicito aqui, ya que si tengo una sola linea que devolver, lo puedo hacer de esta manera
   */
   const calcularDescuentoarrow = (precio, descuento =15) => {
     let descuentoCalculado = 100 - descuento
@@ -123,7 +124,7 @@ function saludarPersona(){
     return montoConDescuento
   }
   
-  const getProductArrow = (indice = 0) => productos[indice];
+  const getProductArrow = (indice = 0) => productos[indice]; //como estoy retornando una sola linea de codigo puedo simplificarlo de esta manera
   
 
   const fiesta = 30;
