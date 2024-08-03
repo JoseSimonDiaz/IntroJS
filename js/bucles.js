@@ -1,3 +1,68 @@
+// Bucle for
+// Uso:
+
+// Cuando conoces de antemano cuántas iteraciones necesitas hacer.
+// Ideal para iterar sobre arrays o listas con un índice.
+// Para situaciones en las que deseas realizar una acción un número específico de veces.
+
+let fruits = ["apple", "banana", "cherry"];
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+
+// Bucle while
+// Uso:
+
+// Cuando no conoces de antemano cuántas veces se ejecutará el bucle.
+// Se ejecuta mientras una condición sea verdadera.
+// Útil para esperar a que algo ocurra o para leer datos hasta alcanzar un final.
+
+let i = 0;
+while (i < 5) {
+    console.log(i);
+    i++;
+}
+
+
+let userInput;
+while (userInput !== "exit") {
+    userInput = prompt("Enter a command (type 'exit' to quit):");
+    console.log("You entered:", userInput);
+}
+
+
+// Bucle do while
+// Uso:
+
+// Cuando necesitas ejecutar el cuerpo del bucle al menos una vez, sin importar la condición inicial.
+// Similar al while, pero con la garantía de que el bloque de código se ejecutará al menos una vez.
+// let i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i < 5);
+
+// let userInput; 
+do {
+    userInput = prompt("Enter a command (type 'exit' to quit):");
+    console.log("You entered:", userInput);
+} while (userInput !== "exit");
+
+
+
+// Resumen
+// for: Úsalo cuando conoces el número exacto de iteraciones o cuando trabajas con arrays y necesitas un índice.
+// while: Úsalo cuando no conoces de antemano el número de iteraciones y la ejecución depende de una condición.
+// do while: Úsalo cuando necesitas que el cuerpo del bucle se ejecute al menos una vez antes de evaluar la condición.
+
+
+
+
 //bucles o ciclos
 //Estructuras repetitivas(haga una operacion una y otra vez)
 //depediendo el dato que este controlando esa rapeticion se ira repitiendo uan y otra vez
