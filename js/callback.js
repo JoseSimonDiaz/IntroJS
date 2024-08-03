@@ -110,6 +110,8 @@ Escribe una función anónima que reciba una palabra o frase cómo parámetro y 
 //Datos de entrada: caracteres(frace, palabra)
 //procesos: Idemtificar las vocales y sumarlas
 //Datos de salida: Es la cantidad de vocales
+
+//el metodo split convierte un string en un array
 const CONTADOR_VOCALES = function(caracteres){
    const vocales=["a","á", "e","é","í","i","ó","o","ú","u"]
   return caracteres.split("").filter((caracteres)=>vocales.includes(caracteres)).lenght;
